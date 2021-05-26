@@ -1,5 +1,11 @@
 <?php
 require("../database/conexao.php");
+$sql = "SELECT p.*, c.descricao as categoria FROM tbl_produto p
+INNER JOIN tbl_categoria c ON p.categoria_id = c.id
+ORDER BY p.id DESC; ";
+ 
+$resultado = mysqli_query($conexao, $sql) or die (mysqli_error($conexao));
+
 ?>
 
 <!DOCTYPE html>

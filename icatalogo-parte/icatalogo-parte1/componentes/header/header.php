@@ -1,5 +1,5 @@
 <?php
-if(!isset($_SESSION)) session_start();
+ if(!isset($_SESSION)) session_start();
 ?>
 
 <link href="/aularafael/projetophp/icatalogo-parte/icatalogo-parte1/componentes/header/header.css" rel="stylesheet" />
@@ -51,7 +51,7 @@ if (isset($_SESSION["mensagem"])) {
           <a id="menu-admin" onclick="logout()">Sair</a>
         </ul>
       </nav>
-      <form id="form-logout"form method="POST" style= "display: none" action="/aularafael/projetophp/icatalogo-parte/icatalogo-parte1/header/acoesLogin.php">
+      <form id="form-logout"form method="POST" style= "display: none" action="/aularafael/projetophp/icatalogo-parte/icatalogo-parte1/componentes/header/acoesLogin.php">
        <input type="hidden" name="acao" value="logout" />
       </form>
       <?php
